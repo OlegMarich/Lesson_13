@@ -1,0 +1,486 @@
+body {
+	background-color: #93bfc6;
+}
+
+.section {
+
+
+}
+
+
+/* ======================================================================== */
+.page__car {
+	margin-bottom: 30px;
+}
+
+.page__practice {
+
+}
+
+.car {
+	width: 100%;  
+	height: 800px;
+	padding: 30px;
+	
+}
+
+.car__body {
+	position: absolute;
+	top: 100px;
+	left: 200px;
+	max-width: 800px;
+	max-height: 500px;
+	transform: translate(0%, 0%);
+	animation: car__body 10s forwards;
+}
+	@keyframes car__body {
+		0% {
+			transform:translate(-200%, 0px) 
+		}
+		20% {
+			transform:translate(500px, 0px)
+		}
+		80% {
+			transform:translate(500px, 0px)
+		}
+		100% {
+			transform:translate(9000px, 0px) 
+		}
+	}
+
+.car__road {
+	position: absolute;
+	width: 100%;
+	height: 10px;
+	top: 540px;
+	left: 0;
+	background-color: #67858a;
+	border-radius: 10px;
+	animation:car__road 1s ease 9s forwards;
+}
+	@keyframes car__road {
+		0% {
+			visibility: visible;
+			opacity: 1;
+		}
+		100% {
+			/* transform: translate(); */
+			visibility: hidden;
+			opacity: 0;
+		}
+	}
+.car__roof {
+	width: 600px;
+	height: 200px;
+	background-color: #ffdd4c;
+	border-radius: 180px 200px 0 0;
+}
+
+.car__front-window {
+	position: absolute;
+	width: 255px;
+	height: 140px;
+	top: 25px;
+	left: 290px;
+	background-color: #e6e7e8;
+	border: 8px solid #5e5f61;
+	border-radius: 15px 250px 0px 30px;
+	z-index: 2;
+}
+
+.car__back-window {
+	position: absolute;
+	width: 210px;
+	height: 140px;
+	top: 25px;
+	left: 40px;
+	background-color: #e6e7e8;
+	border: 8px solid #5e5f61;
+	border-radius: 380px 10px 30px 30px;
+	z-index: 2;
+
+}
+
+.car__hood {
+	position: absolute;
+	width: 200px;
+	height: 50px;
+	top: 150px;
+	left: 585px;
+	background-color: #ffdd4c;
+	border-bottom: 5px solid #eac946;
+	border-radius: 12% 88% 100% 0% / 0% 100% 0% 100%;
+	z-index: 1;
+}
+
+.car__hood::after {
+	content: '';
+	position: absolute;
+	width: 222px;
+	height: 34px;
+	top: 50px;
+	left: 0px;
+	background-color: #ffdd4c;
+	border-bottom: 5px solid #eac946;
+	border-radius: 89% 11% 100% 0% / 0% 100% 0% 100%;
+}
+
+.car__front-dor {
+	position: absolute;
+	width: 355px;
+	height: 330px;
+	top: 10px;
+	left: 230px;
+	background-color: #ffdd4c;
+	border: 5px solid #eac946;
+	border-radius: 0 200px 0 0;
+	z-index: 1;
+}
+
+.car__front-dor::after {
+	content: '';
+	position: absolute;
+	width: 350px;
+	height: 40px;
+	top: 180px;
+	left: 0px;
+	background-color: #ffdd4c;
+	border: 5px solid #eac946;
+	/* border-radius:100% 0% 100% 0% / 62% 100% 0% 38% ;  */
+}
+
+.car__front-dor::before {
+	content: '';
+	position: absolute;
+	background-color: #5e5f61;
+	width: 30px;
+	height: 10px;
+	top: 195px;
+	left: 60px;
+	border-radius: 20px;
+	z-index: 3;
+}
+
+.car__back-dor {
+	position: absolute;
+	width: 260px;
+	height: 330px;
+	top: 10px;
+	left: 10px;
+	background-color: #ffdd4c;
+	border: 5px solid #eac946;
+	border-radius: 180px 0 0 0;
+	z-index: 1;
+}
+
+.car__back-dor::after {
+	content: '';
+	position: absolute;
+	width: 305px;
+	height: 40px;
+	top: 180px;
+	left: -50px;
+	background-color: #ffdd4c;
+	border: 5px solid #eac946;
+	border-radius: 400px 0 0 180px;
+}
+
+.car__front-wing {
+	position: absolute;
+	width: 222px;
+	height: 110px;
+	top: 230px;
+	left: 585px;
+	background-color: #ffdd4c;
+}
+
+.car__front-headlight {
+	position: absolute;
+	width: 12px;
+	height: 35px;
+	top: 240px;
+	left: 805px;
+	background-color: rgb(255, 255, 255);
+	border-radius: 0 12px 12px 0;
+	background-color: #fff;
+	z-index: 10;
+}
+
+.car__front-headlight:hover {
+
+	top: 100px;
+	left: 100px;
+	top: 150px;
+	left: 850px;
+	background-color: #93bfc6;
+	border-top: 100px solid transparent;
+	border-right: 200px solid #fff;
+	border-bottom: 100px solid transparent;
+	opacity: 0.3;
+}
+
+.car__turn-signal {
+	position: absolute;
+	width: 5px;
+	height: 20px;
+	top: 290px;
+	left: 806px;
+	border-radius: 0 10px 10px 0;
+	background-color: #fe9a02;
+	opacity: 0.7;
+}
+
+.car__turn-signal:hover {
+	position: absolute;
+	width: 5px;
+	height: 20px;
+	top: 290px;
+	left: 806px;
+	border-radius: 0 10px 10px 0;
+	background-color: #df8600;
+	opacity: 1;
+}
+
+.car__back-wing {
+	position: absolute;
+	width: 150px;
+	height: 130px;
+	top: 210px;
+	left: -100px;
+	background-color: #ffdd4c;
+	border-radius: 100% 0% 100% 0% / 78% 100% 0% 22%;
+}
+
+.car__back-headlight {
+	position: absolute;
+	width: 12px;
+	height: 30px;
+	top: 280px;
+	left: -105px;
+	background-color: #b82e25;
+	border-radius: 10px 0 0 20px;
+}
+
+.car__back-headlight:hover {
+	position: absolute;
+	width: 12px;
+	height: 30px;
+	top: 280px;
+	left: -105px;
+	background-color: #f80404;
+	border-radius: 10px 0 0 20px;
+
+}
+
+.car__front-wheel {
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	top: 290px;
+	left: 590px;
+	border-radius: 50%;
+	background-color: #5e5f61;
+	z-index: 5;
+	border: dashed 8px #4b4c4d;
+	animation:  front-wheel 8s infinite;
+}
+@keyframes front-wheel {
+	0% {
+		transform: rotate(0deg);
+	}
+	20% {
+		transform: rotate(360deg);
+	}
+	80% {
+		
+		transform: rotate(360deg)
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+.car__front-wheel::before {
+	content: '';
+	width: 120px;
+	height: 120px;
+	position: absolute;
+	top: 67px;
+	left: 67px;
+	transform: translate(-50%, -50%);
+	border: 5px solid #e6e7e8;
+	border-radius: 50%;
+	z-index: 5;
+}
+
+.car__front-wheel::after {
+	content: '';
+	background: #e6e7e8;
+	width: 120px;
+	height: 120px;
+	position: absolute;
+	top: 67px;
+	left: 67px;
+	transform: translate(-50%, -50%);
+	border: 10px solid #5e5f61;
+	border-radius: 100%;
+}
+
+.car__front-wheel-cap {
+	position: absolute;
+	width: 23px;
+	height: 23px;
+	top: 357px;
+	left: 655px;
+	border-radius: 50%;
+	z-index: 10;
+	background-color: #5e5f61;
+}
+
+.car__back-wheel {
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	top: 290px;
+	left: 10px;
+	border: dashed 8px #4c4d4e;
+	border-radius: 50%;
+	background-color: #5e5f61;
+	z-index: 5;
+	animation:  back-wheel 8s infinite;
+}
+@keyframes back-wheel {
+	0% {
+		transform: rotate(0deg);
+	}
+	20% {
+		transform: rotate(360deg);
+	}
+	80% {
+		
+		transform: rotate(360deg)
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+.car__back-wheel::after {
+	content: '';
+	background: #e6e7e8;
+	width: 120px;
+	height: 120px;
+	position: absolute;
+	top: 67px;
+	left: 67px;
+	transform: translate(-50%, -50%);
+	border: 10px solid #5e5f61;
+	border-radius: 100%;
+}
+
+.car__back-wheel::before {
+	content: '';
+	width: 120px;
+	height: 120px;
+	position: absolute;
+	top: 67px;
+	left: 67px;
+	transform: translate(-50%, -50%);
+	border: 5px solid #e6e7e8;
+	border-radius: 50%;
+	z-index: 5;
+}
+
+.car__back-wheel-cap {
+	position: absolute;
+	width: 23px;
+	height: 23px;
+	top: 357px;
+	left: 75px;
+	border-radius: 50%;
+	z-index: 10;
+	background-color: #5e5f61;
+}
+
+.car__threshold {
+	position: absolute;
+	width: 907px;
+	height: 40px;
+	top: 330px;
+	left: -100px;
+	background-color: #eac946;
+	border-radius: 0px 00px 30px 30px;
+}
+
+.car__threshold::after {
+	content: '';
+	position: absolute;
+	width: 40px;
+	height: 50px;
+	top: -15px;
+	left: -15px;
+	border-radius: 60% 30% 30% 60%;
+	background-color: #e6e7e8;
+}
+
+.car__threshold::before {
+	content: '';
+	position: absolute;
+	width: 40px;
+	height: 50px;
+	top: -16px;
+	left: 888px;
+	border-radius: 30% 60% 60% 30%;
+	background-color: #e6e7e8;
+}
+
+.car__back-wheel-arch {
+	position: absolute;
+	width: 158px;
+	height: 158px;
+	top: 270px;
+	left: 7px;
+	background-color: #eac946;
+	z-index: 5;
+	border-radius: 50%;
+}
+
+.car__front-wheel-arch {
+	position: absolute;
+	width: 158px;
+	height: 158px;
+	top: 270px;
+	left: 588px;
+	background-color: #eac946;
+	z-index: 0;
+	border-radius: 50%;
+}
+
+/* ================================================================= */
+.practice {
+	margin-bottom: 40px;
+}
+.practice__item {
+	padding: 15px;
+}
+.practice__text {
+	font-size: 28px;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+	animation: practice__text 1s ease 10s forwards;
+	transform: translate(0px, 50%);
+	opacity: 0;
+}
+@keyframes practice__text {
+	0% {
+		transform: translate(0px, 50%);
+		opacity: 0;
+	}
+	100% {
+		transform: translate(0px, -400px);
+		opacity: 1;
+		color: #b82e25;
+		font-size: 70px;
+	}
+}
+
